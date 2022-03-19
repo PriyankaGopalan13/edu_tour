@@ -1,0 +1,127 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+::placeholder{
+  color: rgba(255, 255, 255, 0.39);
+}
+:focus::placeholder {
+  color: transparent;
+}
+*:focus{
+  outline: none;
+}
+body{
+    user-select: none;  
+    /* background-image:url(icon/wedbg.png); */
+    background:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,0.3)), url(icon/wedbg.png) center center /cover;
+    height: 100vh;
+    color: white;
+    font-size: 18px;
+    font-family: Arial;
+    overflow: hidden;
+  }
+  #div1{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 80px;
+    background-color:rgba(0, 0, 0, 0.65);
+    opacity: 0.9;
+    width:450px;
+    height: 520px;
+    padding:20px;
+  }
+  #button{
+    border: 1px solid gray;
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+  }
+  input{
+    font-size: 15px;
+  }
+  a:link, a:visited{
+    color: black;
+    text-decoration: none;
+  }
+  select,input[type=text],input[type=number],input[type=password]{
+    border: 0px solid transparent;
+    width:300px;
+    height:30px;
+    font-size: 15px;
+    margin: 10px;
+    padding-left: 10px;
+    background: transparent;
+    color: white;
+  }
+  select{
+    border:2px solidwhite;
+    width: 360px;
+    height: 50px;
+    margin-top: 20px;
+  }
+  select option{
+    background:white;
+    color: black;
+  }
+  textarea{
+      width: 350px;
+      margin: 10px;
+      font-size: 15px;
+      padding-left: 10px;
+      padding-top: 10px;
+      color: black;
+      background: transparent;
+      border: 2px solid white;
+  }
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover, 
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus{
+      -webkit-animation: autofill 0s forwards;
+       animation: autofill 0s forwards;
+  }
+  
+  @keyframes autofill {
+      100% {
+          background: transparent;
+          color: #1f1f1f;
+      }
+  }
+  
+  @-webkit-keyframes autofill {
+      100% {
+          background: transparent;
+          color: #1f1f1f;
+      }
+  }
+  #button{
+    border:2px solid white;
+    padding:5px 20px;
+    background:linear-gradient(#1f1f1f,#1f1f1f) center/100% 0px no-repeat;
+    transition:0.2s all linear;
+  }
+  #button:hover {
+    border:2px solid #1f1f1f;
+    background-size:100% 100%;
+    color: white;
+  }
+  #textdes{
+    border-bottom:2px solid white; 
+    width:80%;
+  }
+  label{
+    position: absolute;  
+    right:70px; 
+    font-size: 15px;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  #div1{
+    overflow-y: scroll; 
+  }
